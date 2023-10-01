@@ -745,9 +745,9 @@ Java程序开发三步骤：**编写**、**编译**、**运行**。
 
 ```java
 class HelloChina {
-  	public static void main(Variable.StringTest[] args) {
-    	System.out.println("HelloWorld!!");
-  	}
+  public static void main(variable.StringTest[] args) {
+    System.out.println("HelloWorld!!");
+  }
 }
 ```
 
@@ -800,7 +800,7 @@ java 主类名字
 主类是指包含main方法的类，main方法是Java程序的入口：
 
 ```java
-public static void main(Variable.StringTest[] args){
+public static void main(variable.StringTest[] args){
     
 }
 ```
@@ -843,7 +843,7 @@ java HelloChina
 
 * 	单词拼写问题
   * 正确：class		         错误：Class
-  * 正确：Variable.StringTest                    错误：string
+  * 正确：variable.StringTest                    错误：string
   * 正确：System                  错误：system
   * 正确：main		         错误：mian
 * 	Java语言是一门严格区分大小写的语言
@@ -942,7 +942,7 @@ javac -encoding utf-8 Review01.java
 Java程序的入口是main方法
 
 ```java
-public static void main(Variable.StringTest[] args){
+public static void main(variable.StringTest[] args){
     
 }
 ```
@@ -1083,20 +1083,21 @@ public static void main(Variable.StringTest[] args){
 /*
 多行注释
 */
+
 /**
-文档注释演示。这是我的第一个Java程序！^_^
-@author songhk
-@version 1.0
-*/
-public class HelloWorld{
-    
-	/**
-	Java程序的入口
-	@param args main方法的命令参数
-	*/
-    public static void main(Variable.StringTest[] args){
-        System.out.println("hello");
-    }
+ 文档注释演示。这是我的第一个Java程序！^_^
+ @author songhk
+ @version 1.0
+ */
+public class HelloWorld {
+
+  /**
+   Java程序的入口
+   @param args main方法的命令参数
+   */
+  public static void main(variable.StringTest[] args) {
+    System.out.println("hello");
+  }
 }
 ```
 
@@ -1187,13 +1188,13 @@ Java确实是从C语言和C++语言继承了许多成份，甚至可以将Java�
  ![image-20220315221336038](images/image-20220315221336038.png)
 
 ```java
-class Exercise1{
-	public static void main(Variable.StringTest[] args){
-		System.out.println("姓名：康师傅");
-		System.out.println();//换行操作
-		System.out.println("性别：男");
-		System.out.println("家庭住址：北京程序员聚集地：回龙观");
-	}
+class Exercise1 {
+  public static void main(variable.StringTest[] args) {
+    System.out.println("姓名：康师傅");
+    System.out.println();//换行操作
+    System.out.println("性别：男");
+    System.out.println("家庭住址：北京程序员聚集地：回龙观");
+  }
 }
 ```
 
@@ -1207,89 +1208,89 @@ class Exercise1{
 
 ```java
 //方式一：
-class Exercise2{
-	public static void main(Variable.StringTest[] args){
-		System.out.print("\t");
-		System.out.print("*");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		
-		System.out.println("*");
+class Exercise2 {
+  public static void main(variable.StringTest[] args) {
+    System.out.print("\t");
+    System.out.print("*");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
 
-		
-		System.out.print("*");
-		System.out.print("\t");
-		//System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("I love java");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.println("*");
+    System.out.println("*");
 
-		
-		System.out.print("\t");
-		System.out.print("*");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		
-		System.out.println("*");
 
-		
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("*");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		
-		System.out.println("*");
+    System.out.print("*");
+    System.out.print("\t");
+    //System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("I love java");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.println("*");
 
-		
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("*");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		
-		System.out.println("*");
-		
-		
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("*");
-		System.out.print("\t");
-		
-		System.out.println("*");
 
-		
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("\t");
-		System.out.print("    ");
-		System.out.print("*");
+    System.out.print("\t");
+    System.out.print("*");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
 
-	}
+    System.out.println("*");
+
+
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("*");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+
+    System.out.println("*");
+
+
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("*");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+
+    System.out.println("*");
+
+
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("*");
+    System.out.print("\t");
+
+    System.out.println("*");
+
+
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("\t");
+    System.out.print("    ");
+    System.out.print("*");
+
+  }
 
 }
 ```
@@ -1299,21 +1300,21 @@ class Exercise2{
 方式二：
 
 ```java
-class Exercise3{
-	public static void main(Variable.StringTest[] args){
-		
-		System.out.print("\t"+"*"+"\t\t\t\t\t\t\t\t\t\t\t\t"+"*"+"\t"+"\n");
-		System.out.print("*"+"\t\t"+"*"+"\t\t\t\t"+"I love Java"+"\t\t\t\t"+"*"+"\t\t\t"+"*"+"\n");
-		System.out.print("\t"+"*"+"\t\t\t\t\t\t\t\t\t\t\t\t"+"*"+"\t"+"\n");
-		System.out.print("\t\t"+"*"+"\t\t\t\t\t\t\t\t\t\t"+"*"+"\t\t"+"\n");
-		System.out.print("\t\t\t"+"*"+"\t\t\t\t\t\t\t\t"+"*"+"\t"+"\n");
-		System.out.print("\t\t\t\t"+"*"+"\t\t\t\t\t\t"+"*"+""+"\t"+"\n");
-		System.out.print("\t\t\t\t\t"+"*"+"\t\t\t\t"+"*"+""+"\t\t"+"\n");
-		System.out.print("\t\t\t\t\t\t"+"*"+"\t\t"+"*"+""+"\t\t"+"\n");
-		System.out.print("\t\t\t\t\t\t\t"+"*"+"\n");
+class Exercise3 {
+  public static void main(variable.StringTest[] args) {
+
+    System.out.print("\t" + "*" + "\t\t\t\t\t\t\t\t\t\t\t\t" + "*" + "\t" + "\n");
+    System.out.print("*" + "\t\t" + "*" + "\t\t\t\t" + "I love Java" + "\t\t\t\t" + "*" + "\t\t\t" + "*" + "\n");
+    System.out.print("\t" + "*" + "\t\t\t\t\t\t\t\t\t\t\t\t" + "*" + "\t" + "\n");
+    System.out.print("\t\t" + "*" + "\t\t\t\t\t\t\t\t\t\t" + "*" + "\t\t" + "\n");
+    System.out.print("\t\t\t" + "*" + "\t\t\t\t\t\t\t\t" + "*" + "\t" + "\n");
+    System.out.print("\t\t\t\t" + "*" + "\t\t\t\t\t\t" + "*" + "" + "\t" + "\n");
+    System.out.print("\t\t\t\t\t" + "*" + "\t\t\t\t" + "*" + "" + "\t\t" + "\n");
+    System.out.print("\t\t\t\t\t\t" + "*" + "\t\t" + "*" + "" + "\t\t" + "\n");
+    System.out.print("\t\t\t\t\t\t\t" + "*" + "\n");
 
 
-	}
+  }
 
 }
 ```

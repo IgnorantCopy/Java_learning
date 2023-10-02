@@ -41,5 +41,8 @@ public class HelloWorld {
  *  16.Ctrl+Shift+U:切换大小写
  *  17.Alt+Ctrl+L:格式化代码
  *  18.Alt+1:显示Project目录
+ *  19.Alt+C:新建 class
+ *  20.Alt+D:新建 module
+ *  21.Alt+Shift+K:新建 package
  */
 

@@ -239,29 +239,29 @@ package com.atguigu.debug;
  */
 public class Debug03 {
     public static void main(String[] args) {
-        Person p1 = new Person(3);
+        initialize.Person p1 = new initialize.Person(3);
 
         System.out.println(p1);
     }
 }
 
-class Person{
+class initialize.Person{
     private int id = 1;
     private String name;
     private int age;
 
-    public Person() {
+    public initialize.Person() {
     }
     {
         id = 2;
     }
-    public Person(int id) {
+    public initialize.Person(int id) {
         this.id = id;
     }
 
 
 
-    public Person(int id, String name, int age) {
+    public initialize.Person(int id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -293,7 +293,7 @@ class Person{
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "initialize.Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
@@ -360,7 +360,7 @@ public class Debug05 {
         System.out.println(result);
 
 
-//        Person p1 = new Person(1001);
+//        initialize.Person p1 = new initialize.Person(1001);
 //        System.out.println(p1.getName().toUpperCase());
 
 

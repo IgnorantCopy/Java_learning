@@ -1,0 +1,8 @@
+Object类：
+    任何一个Java类都直接或间接地继承于Object类
+    Object类中没有声明属性
+    Object类中提供了一个空参构造器
+    Object类中的方法：
+        equals()、toString()
+        * clone()、finalize()
+        ** getClass()、hashCode()、notify()、notifyAll()、wait(x)、wait(x,y)

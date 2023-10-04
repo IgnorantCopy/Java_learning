@@ -3,16 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AccountRecord/AccountRecord.iml" filepath="$PROJECT_DIR$/AccountRecord/AccountRecord.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Advanced/Advanced.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Advanced/Advanced.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Basis/Basis.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Basis/Basis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter1_Summary/Chapter1_Summary.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter1_Summary/Chapter1_Summary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter2_VariableAndOperater/Chapter2_VariableAndOperater.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter2_VariableAndOperater/Chapter2_VariableAndOperater.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter3_Structure/Chapter3_Structure.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter3_Structure/Chapter3_Structure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter4_Arrays/Chapter4_Arrays.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter4_Arrays/Chapter4_Arrays.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Chapter5_OOP.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Chapter5_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Advanced/Advanced.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Advanced/Advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Basis/Basis.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Basis/Basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter01_Summary/Chapter01_Summary.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter01_Summary/Chapter01_Summary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter02_VariableAndOperater/Chapter02_VariableAndOperater.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter02_VariableAndOperater/Chapter02_VariableAndOperater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter03_Structure/Chapter03_Structure.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter03_Structure/Chapter03_Structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter04_Arrays/Chapter04_Arrays.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter04_Arrays/Chapter04_Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Chapter05_OOP.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Chapter05_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter06_Throwable/Chapter06_Throwable.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter06_Throwable/Chapter06_Throwable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter07_Threading/Chapter07_Threading.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter07_Threading/Chapter07_Threading.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasis/JavaBasis.iml" filepath="$PROJECT_DIR$/JavaBasis/JavaBasis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_learning.iml" filepath="$PROJECT_DIR$/.idea/Java_learning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Senior/Senior.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter5_OOP/Senior/Senior.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Senior/Senior.iml" filepath="$PROJECT_DIR$/JavaBasis/Chapter05_OOP/Senior/Senior.iml" />
     </modules>
   </component>
 </project>

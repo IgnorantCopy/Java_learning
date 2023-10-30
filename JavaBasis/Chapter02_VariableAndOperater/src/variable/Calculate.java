@@ -15,7 +15,7 @@ package variable;
  * 2.强制类型转换：上述过程的逆过程（可能导致精度损失）
  */
 public class Calculate {
-    public static void main(StringTest[] args) {
+    public static void main(String[] args) {
         //自动类型提升
         int num1 = 10;
         int num2 = num1;
@@ -59,6 +59,5 @@ public class Calculate {
         int i3 = 128;
         byte b4 = (byte)i3;
         System.out.println(b4);
-
     }
 }

@@ -584,7 +584,7 @@ public class FileReaderWriterTest {
     @Test
     public void test1() throws IOException {
         //1. 创建File类的对象，对应着物理磁盘上的某个文件
-        File file = new File("hello.txt");
+        File file = new File("abc.txt");
         //2. 创建FileReader流对象，将File类的对象作为参数传递到FileReader的构造器中
         FileReader fr = new FileReader(file);
         //3. 通过相关流的方法，读取文件中的数据
@@ -609,7 +609,7 @@ public class FileReaderWriterTest {
         FileReader fr = null;
         try {
             //1. 创建File类的对象，对应着物理磁盘上的某个文件
-            File file = new File("hello.txt");
+            File file = new File("abc.txt");
             //2. 创建FileReader流对象，将File类的对象作为参数传递到FileReader的构造器中
             fr = new FileReader(file);
             //3. 通过相关流的方法，读取文件中的数据
@@ -647,7 +647,7 @@ public class FileReaderWriterTest {
         FileReader fr = null;
         try {
             //1. 创建File类的对象，对应着物理磁盘上的某个文件
-            File file = new File("hello.txt");
+            File file = new File("abc.txt");
             //2. 创建FileReader流对象，将File类的对象作为参数传递到FileReader的构造器中
             fr = new FileReader(file);
             //3. 通过相关流的方法，读取文件中的数据
@@ -1051,7 +1051,7 @@ public class FOSWrite {
 //            fos = new FileOutputStream(new File("pony_copy1.jpg"));
 
             //复制文本文件：成功
-            fis = new FileInputStream(new File("hello.txt"));
+            fis = new FileInputStream(new File("abc.txt"));
             fos = new FileOutputStream(new File("hello1.txt"));
 
             //2. 复制操作（读、写）

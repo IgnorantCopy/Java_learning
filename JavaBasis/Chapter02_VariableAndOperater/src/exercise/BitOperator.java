@@ -23,7 +23,7 @@ public class BitOperator {
         n = m - n;
         m = m - n;
         System.out.println("m=" + m + ",n=" + n);
-        //法3：同上
+        //法3：异或
         m = m ^ n;
         n = m ^ n;
         m = m ^ n;

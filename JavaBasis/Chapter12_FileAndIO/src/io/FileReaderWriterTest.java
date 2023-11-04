@@ -166,4 +166,43 @@ public class FileReaderWriterTest {
             }
         }
     }
+
+    /*
+     * 复制一份Anaconda.png文件,命名为Anaconda_copy.png
+     * 复制失败!因为字符流不适合用来处理非文本文件
+     */
+    @Test
+    public void test6(){
+        FileReader fileReader = null;
+        FileWriter fileWriter = null;
+        try {
+            File file1 = new File("src/io/Anaconda.png");
+            File file2 = new File("src/io/Anaconda_copy.png");
+            fileReader = new FileReader(file1);
+            fileWriter = new FileWriter(file2);
+            char[] charBuffer = new char[5];
+            int len;
+            while ((len = fileReader.read(charBuffer)) != -1) {
+                fileWriter.write(charBuffer, 0, len);
+            }
+            System.out.println("复制成功!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fileWriter != null) {
+                try {
+                    fileWriter.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }

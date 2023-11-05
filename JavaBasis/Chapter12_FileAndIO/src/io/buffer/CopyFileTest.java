@@ -6,7 +6,7 @@ import java.io.*;
 
 /**
  * ClassName: CopyFileTest
- * Description:
+ * Description: 12.2.1.3
  *  测试使用 FileInputStream + FileOutputStream 复制文件
  *      和 BufferedInputStream + BufferedOutputStream 复制文件
  *  的效率

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="commons-io-2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/JavaBasis/Chapter12_FileAndIO/libs/commons-io-2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../OneDrive - 南京大学/MyFiles/U盘备份/Java/尚硅谷Java入门教程，java电子书+Java面试真题（2023新版）/01_课件与电子教材/01_课件与电子教材/尚硅谷_第15章_File类与IO流/03-apache-common包/commons-io-2.5-src/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../OneDrive - 南京大学/MyFiles/U盘备份/Java/尚硅谷Java入门教程，java电子书+Java面试真题（2023新版）/01_课件与电子教材/01_课件与电子教材/尚硅谷_第15章_File类与IO流/03-apache-common包/commons-io-2.5-src/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

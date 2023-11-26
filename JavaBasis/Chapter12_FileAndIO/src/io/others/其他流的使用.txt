@@ -6,6 +6,8 @@ System.out:标准输出流,默认从显示器输出(理解为控制台输出)
 setIn(InputStream is)
 setOut(OutputStream ps)
 
-2.打印流
+2.打印流:实现将基本数据类型的数据格式转化为字符串输出
+PrintStream:
+PrintWriter:
 
 3.apache-common包的使用

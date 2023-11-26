@@ -11,8 +11,9 @@ import java.io.Serializable;
  * @create 2023/11/5 20:55
  */
 public class Person implements Serializable {    //Serializable:属于一个标识接口
-    String name;
-    int age;
+    transient String name;
+    static int age;
+    int id;
 
     Account acct;
 
@@ -33,6 +34,13 @@ public class Person implements Serializable {    //Serializable:属于一个标�
         this.acct = acct;
     }
 
+    public Person(String name, int age, int id, Account acct) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+        this.acct = acct;
+    }
+
     public String getName() {
         return name;
     }
@@ -49,11 +57,28 @@ public class Person implements Serializable {    //Serializable:属于一个标�
         this.age = age;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Account getAcct() {
+        return acct;
+    }
+
+    public void setAcct(Account acct) {
+        this.acct = acct;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", id=" + id +
                 ", acct=" + acct +
                 '}';
     }

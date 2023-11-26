@@ -71,6 +71,5 @@ public class ObjectIOStreamTest {
         System.out.println(person2);
 
         ois.close();
-
     }
 }

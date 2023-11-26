@@ -81,8 +81,16 @@ public class OtherStreamTest {
         }
     }
 
+    // 测试自定义日志类
     @Test
-    public void test4() throws IOException {
+    public void test4(){
+        Logger.log("调用了System类的gc()方法，建议启动垃圾回收");
+        Logger.log("调用了TeamView的addMember()方法");
+        Logger.log("用户尝试进行登录，验证失败");
+    }
+
+    @Test
+    public void test5() throws IOException {
         //复制一个图片
         File srcFile = new File("src/io/Anaconda.png");
         File destFile = new File("src/io/others/Anaconda_copy.png");

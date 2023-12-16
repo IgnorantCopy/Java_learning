@@ -428,8 +428,8 @@ ${DAY} - the current day of the month.
 ${HOUR} - the current hour. 
 ${MINUTE} - the current minute. 
 ${PRODUCT_NAME} - the name of the IDE in which the file will be created. 
-${MONTH_NAME_SHORT} - the first 3 letters of the month name. Example: Jan, Feb, etc. 
-${MONTH_NAME_FULL} - full name of a month. Example: January, February, etc.
+${MONTH_NAME_SHORT} - the first 3 letters of the month name. example.Person: Jan, Feb, etc. 
+${MONTH_NAME_FULL} - full name of a month. example.Person: January, February, etc.
 
 ```
 

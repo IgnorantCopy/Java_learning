@@ -1,0 +1,65 @@
+1.Class类的理解(以Java类的加载为例)
+针对于编写好的.java源文件进行编译(使用javac.exe),会生成一个或多个.class字节码文件.接着,我们使用java.exe命令对指定的.class文件进行解释运行
+这个解释运行的过程中,需要将.class字节码文件加载到内存中.加载到内存中的.class文件对应的结构即为Class的一个实例
+
+如:加载到内存中的Person类、String类、User类,都作为Class的一个一个实例
+
+Class clazz1 = Person.class;
+Class clazz2 = String.class;
+Class clazz3 = User.class;      // 运行时类
+Class clazz4 = Comparable.class;
+
+注:运行时类在内存中会缓存起来,在整个执行期间,(同一类加载器)只会加载一次
+
+2.体会:Class可以看作是反射的源头
+
+3.Class类的实例可以指向的结构:所有Java类型
+    ①class:外部类,成员(成员内部类,静态内部类),局部内部类,匿名内部类
+    ②interface:接口
+    ③[]:数组
+    ④enum:枚举
+    ⑤annotation:注解@interface
+    ⑥primitive type:基本数据类型
+    ⑦void
+
+4.类的加载过程
+    ①装载(loading):
+        >将类的class文件读入内存,并为之创建一个java.lang.Class对象.此过程由类加载器完成
+    ②链接(linking):
+        >验证(Verify):确保加载的类的信息符合JVM规范(以ca fe ba be 开头就没有安全性问题)
+        >准备(Prepare):正式为类变量(static)分配内存并设置类变量默认初始值的阶段,这些内存都将在方法区中进行匹配
+        >解析(Resolve):虚拟机常量池内的符号引用(常量名)替换为直接引用(地址)的过程
+    ③初始化(initialization):
+        >执行类构造器<clinit>()方法的过程
+        >类构造器<clinit>()方法是由编译期自动收集类中所有类变量的赋值动作和静态代码块中的语句合并产生的
+
+5.类的加载器
+    ①作用:负责类的加载,并对应于一个Class的实例
+    ②分类(jdk8)
+        I.BootstrapClassLoader:引导类加载器、启动类加载器
+            >使用C/C++语言编写,不能通过Java代码获取其实例
+            >负责加载Java的核心库(JAVA_HOME/jre/lib/rt.jar或sun.boot.class.path路径下的内容)
+        II.继承于ClassLoader的类加载器
+            i.ExtensionClassLoader:扩展类加载器
+                >负责加载从java.ext.dirs系统属性所指定的目录中加载类库,或从JDK的安装目录的jre/lib/ext子目录下加载类库
+            ii.SystemClassLoader/ApplicationClassLoader:系统类加载器、应用程序类加载器
+                >自动逸的类默认使用的类的加载器
+            iii.用户自定义类加载器
+                >实现应用隔离(同一个类在一个应用程序中可以加载多份)、数据加密
+    注:以上类加载器没有继承关系
+    class ClassLoader {
+        ClassLoader parent;
+
+        public ClassLoader(ClassLoader parent) {
+            this.parent = parent;
+        }
+    }
+
+    // 测试
+    ClassLoader loader1 = new ClassLoader();
+    ClassLoader loader2 = new ClassLoader(loader1);
+    // 我们就把loader1叫做loader2的父类加载器
+
+6.使用类的加载器获取流,并读取配置文件信息
+
+
